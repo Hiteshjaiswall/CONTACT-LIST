@@ -26,7 +26,9 @@ app.set('views', path.join(__dirname,"views" ));
 
 app.use(express.urlencoded());
 
+// static files ae rally usefull if u want to style your page or use java script now to tell the app that you are going to use static files u have to describe
 
+app.use(express.static('assets'));
 // lets give osme contact
 var contactList=[
     {
